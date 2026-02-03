@@ -10,7 +10,7 @@ define('DB_NAME', getenv('DB_NAME') ?: 'crypto_exchange');
 define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
 
-define('BASE_URL', rtrim((isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']), '/'));
+define('BASE_URL', rtrim(getenv('BASE_URL') ?: ((isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST']), '/'));
 
 define('APP_NAME', 'NaijaCryptoX');
 

@@ -11,6 +11,7 @@ A procedural PHP crypto exchange platform tailored for Nigerian users, deployabl
    - `DB_NAME`
    - `DB_USER`
    - `DB_PASS`
+   - `BASE_URL` (optional, set when hosting in a subdirectory)
    - `SUPPORT_EMAIL`
    - `MAIL_FROM`
    - `MAIL_FROM_NAME`
